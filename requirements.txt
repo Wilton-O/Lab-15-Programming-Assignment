@@ -6,10 +6,8 @@ Purpose: A small program to plot math formulas
    Date: 04/12/2025 (dd/mm/yyyy)
 '''
 
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 
 # I don't have a favorite math formula...
 # So, I made up this wacky circle!
@@ -24,7 +22,6 @@ radius = (1
 
 x = radius * np.cos(theta)
 y = radius * np.sin(theta)
-
 
 plt.plot(x, y,
          linewidth = 3,
