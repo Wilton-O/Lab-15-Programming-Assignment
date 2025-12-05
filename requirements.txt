@@ -1,0 +1,38 @@
+'''
+Program: Graph Plotter
+ Author: Wilton Oliver
+Purpose: A small program to plot math formulas
+         on a screen-window printed graph.
+   Date: 04/12/2025 (dd/mm/yyyy)
+'''
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# I don't have a favorite math formula...
+# So, I made up this wacky circle!
+# It ends up looking like flower petals.
+theta = np.linspace(0, 2*np.pi, 3000)
+
+radius = (1
+          + 0.50 * np.sin(7*theta)
+          + 0.25 * np.sin(14*theta + 1)
+          + 0.15 * np.sin(28*theta + 2)
+         ) 
+
+x = radius * np.cos(theta)
+y = radius * np.sin(theta)
+
+
+plt.plot(x, y,
+         linewidth = 3,
+         color = 'purple',
+        )
+
+plt.title("Wilton's Wacky Math Graph")
+plt.axis('equal')
+plt.grid(True)
+
+plt.show()
